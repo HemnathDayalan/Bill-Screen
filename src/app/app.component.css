@@ -1,0 +1,125 @@
+.invoice-container {
+  background-color: #ccc;
+    font-family: sans-serif;
+    width: 90%; 
+    max-width: 400px; 
+    margin: 20px auto; 
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    padding: 2px
+    /* box-sizing: border-box; */
+  }
+
+  .invoice-container > div {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bill-amount-pane{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1px solid #ccc; */
+  }
+  
+  /* .store-info {
+    text-align: left; 
+  } */
+  
+  .logo {
+    max-width: 100px; 
+    /* margin-bottom: 10px; */
+  }
+  
+  .amount {
+    text-align: right; 
+  }
+  
+  .total-amount {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .description, .calculation {
+    /* margin-bottom: 10px; */
+  }
+  
+  .description p, .calculation p {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .total {
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .payment {
+    /* margin-bottom: 20px; */
+  }
+  
+  .payment p {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .savings {
+    text-align: center;
+    /* margin-bottom: 20px; */
+  }
+  
+  .congratulations {
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .congratulations > p {
+    text-align: center;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .congratulations::after{
+    content: "\a";
+    white-space: pre;
+  }
+  .congratulations:last-of-type::after {
+    content: "";
+  }
+  
+
+  @media (max-width: 350px) {
+    .header {
+      flex-direction: column; 
+      align-items: flex-start;
+    }
+  
+    .store-info {
+      text-align: center; 
+      /* margin-bottom: 10px; */
+    }
+  
+    .amount {
+      text-align: center; 
+      /* margin-top: 10px; */
+    }
+  
+    .description p, .calculation p, .payment p {
+      flex-direction: column; 
+      align-items: flex-start;
+    }
+  }
